@@ -22,9 +22,11 @@ const taskSchema = new mongoose.Schema({
         require: true,
     },
     sprintId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "sprint",
-        required: true,
+        type: String,
+
+    },
+    sprintName: {
+        type: String,
     }
 
 });
